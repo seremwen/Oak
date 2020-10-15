@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index,follow" />
+    <link rel="shortcut icon" href="images/main_logo.jpg" type="image/x-icon">
+    <title>Home | OAKSCRIPT PUBLISHERS AND ACADEMY</title>
+    
+    <link href="Content/Template/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link  href="Content/Template/css/animate.css" rel="stylesheet" type="text/css">
+    <link  href="Content/Template/css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="Content/Template/css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link  href="Content/Template/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link  href="Content/Template/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link  href="Content/Template/css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Content/Template/js/jquery.min.js"></script>
+    <script type="text/javascript" src="Content/Template/js/jquery.migrate.js"></script>
+    <script type="text/javascript" src="Content/Template/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="Content/Template/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="Content/Template/js/bootstrap.js"></script>
+    <script type="text/javascript" src="Content/Template/js/raphael-min.js"></script>
+    <script type="text/javascript" src="Content/Template/js/DevSolutionSkill.min.js"></script>
+    <script type="text/javascript" src="Content/Template/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="Content/Template/js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="Content/Template/js/retina-1.1.0.min.js"></script>
+    <script type="text/javascript" src="Content/Template/js/waypoint.min.js"></script>
+    <script type="text/javascript" src="Content/Template/js/plugins-scroll.js"></script>
+    <script type="text/javascript" src="Content/Template/js/script.js"></script>
+
+                                   
+   
+    <script src="bundles/jqueryuiec92?v="></script>
+
+    <link href="Content/themes/base/css9065.css?v=6GWhSz1xEQiUE3E4zsIfG9d_jYl4GfnZiv2M73vgacs1" rel="stylesheet"/>
+
+
+
+
+   <script>
+    $(function () {
+        var pull = $('#pull');
+        menu = $('nav ul');
+        menuHeight = menu.height();
+
+        $(pull).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+
+        $.ajax({
+            type: "Get",
+            url: '/Menus/GetMenu',
+            dataType: 'html',
+            data: { Id: "Homepage" },
+            success: function (resp) {
+                $('#mainmenu').html(resp);
+            },
+            error: function (data) {
+            }
+        });
+
+        $(window).resize(function () {
+            var w = $(window).width();
+            if (w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+        });
+    });
+                                   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="new/fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="new/css/bootstrap.min.css">
+  <link rel="stylesheet" href="new/css/jquery-ui.css">
+  <link rel="stylesheet" href="new/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="new/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="new/css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="new/css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="new/css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="new/fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="new/css/aos.css">
+  <link href="new/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="new/css/style.css">
+  <link rel="stylesheet" href="form/form.css" >
+        <script src="form/form.js"></script>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    
+    
+    
+
+   <div class="container">
+            <div class="container-box rotated">
+                <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">Contact Us</button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">
+                                Contact Us
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" method="post" id="reused_form" >
+                                <p> Send your message in the form below and we will get back to you as early as possible. </p>
+                                <div class="form-group">
+                                    <label for="name"> Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"> Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name"> Message:</label>
+                                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                            </form>
+                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    <div class="footer">
+      <div class="container">
+        
+
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+  <!-- .site-wrap -->
+
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff5e15"/></svg></div>
+
+  <script src="new/js/jquery-3.3.1.min.js"></script>
+  <script src="new/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="new/js/jquery-ui.js"></script>
+  <script src="new/js/popper.min.js"></script>
+  <script src="new/js/bootstrap.min.js"></script>
+  <script src="new/js/owl.carousel.min.js"></script>
+  <script src="new/js/jquery.stellar.min.js"></script>
+  <script src="new/js/jquery.countdown.min.js"></script>
+  <script src="new/js/bootstrap-datepicker.min.js"></script>
+  <script src="new/js/jquery.easing.1.3.js"></script>
+  <script src="new/js/aos.js"></script>
+  <script src="new/js/jquery.fancybox.min.js"></script>
+  <script src="new/js/jquery.sticky.js"></script>
+  <script src="new/js/jquery.mb.YTPlayer.min.js"></script>
+
+
+
+
+  <script src="new/js/main.js"></script>
+
+</body>
+
+</html>

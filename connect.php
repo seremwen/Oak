@@ -1,0 +1,8 @@
+<?php
+//set up mysql connection
+$dbuser="root";
+$dbpass="";
+$host="localhost";
+$db="oakscript";
+$mysqli =new mysqli($host,$dbuser, $dbpass, $db);
+?>
